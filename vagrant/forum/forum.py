@@ -75,7 +75,7 @@ def Post(env, resp):
         content = content.strip()
         if content:
             # Save it in the database
-            forumdb.AddPost(content)
+          forumdb.AddPost(content)
     # 302 redirect back to the main page
     headers = [('Location', '/'),
                ('Content-type', 'text/plain')]
